@@ -1,0 +1,333 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(33, 32, 32);
+  width: 100%;
+}
+main {
+  margin-top: 4em;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  display: block;
+  overflow: hidden;
+  background-color: rgb(50, 48, 48);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 4em;
+  width: 100%;
+  opacity: 1;
+}
+navbar#navbar {
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  top: 1em;
+  left: 2em;
+  background-color: rgb(50, 48, 48);
+  height: 36px;
+  width: 400px;
+  z-index: 100;
+}
+
+#navbar ul#menu {
+  display: grid;
+  position: fixed;
+  top: -0.2em;
+  left: 2em;
+  color: white;
+  font-size: 1.5em;
+  grid-template-columns: 5em 5em 5em;
+  grid-template-rows: 1.5em;
+  list-style-type: none;
+  grid-template-areas: "work about contact";
+  z-index: 150;
+}
+#navbar a {
+  /* display: none; */
+  position: absolute;
+  cursor: pointer;
+  z-index: 200;
+}
+
+#home {
+  grid-area: work;
+}
+#about {
+  grid-area: about;
+}
+#contact {
+  grid-area: contact;
+}
+.project-container {
+  display: grid;
+  position: absolute;
+  left: 37em;
+
+  grid-auto-columns: 105em;
+  row-gap: 7em;
+  grid-template-rows: 51.8em 51.8em 51.8em 51.8em;
+  grid-template-areas:
+    "proj1"
+    "proj2"
+    "proj3"
+    "proj4";
+}
+
+#proj1 {
+  grid-area: proj1;
+  border-radius: 1.5em;
+  background: radial-gradient(#9fdaf5, #f6c8c2);
+  box-shadow: 10px 10px 70px 70px rgba(150, 145, 145, 0.2);
+}
+
+#proj2 {
+  grid-area: proj2;
+  background-color: rgb(77, 74, 74);
+  border-radius: 2em;
+  background: linear-gradient(#f6d6c2, #a79ff5);
+  box-shadow: 10px 10px 70px 70px rgba(150, 145, 145, 0.2);
+}
+
+#proj3 {
+  grid-area: proj3;
+  background-color: rgb(77, 74, 74);
+  border-radius: 2em;
+  background: radial-gradient(#f6eec2, #e49ff5);
+  box-shadow: 10px 10px 70px 70px rgba(150, 145, 145, 0.2);
+}
+
+#proj4 {
+  grid-area: proj4;
+  background-color: rgb(77, 74, 74);
+  border-radius: 2em;
+  background: linear-gradient(#a79ff5, #f6d6c2);
+  box-shadow: 10px 10px 70px 70px rgba(150, 145, 145, 0.2);
+}
+
+#animation {
+  height: 35em;
+  width: 35em;
+  background-color: red;
+  position: absolute;
+  top: 10em;
+  left: 70em;
+}
+#projects {
+  position: relative;
+  top: 50em;
+  left: -0.1em;
+}
+div#links {
+  position: relative;
+  left: 80em;
+  top: 2px;
+  height: 40px;
+  width: 200px;
+  display: inline-block;
+}
+
+#idLinkedInIcon {
+  background-color: rgb(0, 102, 170);
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font: bold 30px Arial, Helvetica, sans-serif;
+  height: 30px;
+
+  text-align: center;
+  width: 35px;
+}
+#idLinkedInIcon:hover {
+  background-color: rgb(47, 131, 227);
+}
+#links li#linkedin {
+  position: fixed;
+  padding: 1em;
+  left: 100em;
+  top: 0.5em;
+}
+#links li#github {
+  position: fixed;
+  cursor: pointer;
+  padding: 1em;
+  grid-area: github;
+  top: 0.2em;
+  left: 104.5em;
+}
+#git {
+  position: fixed;
+  font-size: 40px;
+  color: red;
+}
+#git:hover {
+  color: rgb(220, 84, 84);
+}
+#presentation {
+  position: absolute;
+  bottom: 22em;
+  right: 50em;
+  margin-left: 5%;
+
+  background-image: url(https://st2.depositphotos.com/1013220/10754/i/950/depositphotos_107549332-stock-photo-abstract-trianglify-background.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Space Mono", monospace;
+  letter-spacing: -1px;
+}
+#h2-pres {
+  font-size: 2rem;
+  color: white;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 3px;
+}
+
+h2#proj-title1 {
+  /* background: fixed; */
+  position: absolute;
+  right: 60px;
+  top: 60px;
+}
+h2 {
+  font-family: "Big Shoulders Display", monospace;
+}
+h3 {
+  font-family: "Space Mono", monospace;
+  letter-spacing: 2px;
+}
+
+h3#proj-descr1 {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+}
+h2#proj-title2 {
+  /* background: fixed; */
+  position: absolute;
+  right: 60px;
+  top: 42em;
+}
+h3#proj-descr2 {
+  position: absolute;
+  right: 60px;
+  top: 51.5em;
+}
+h2#proj-title3 {
+  /* background: fixed; */
+  position: absolute;
+  right: 60px;
+  top: 81em;
+}
+h3#proj-descr3 {
+  position: absolute;
+  right: 60px;
+  top: 101.5em;
+}
+h2#proj-title4 {
+  /* background: fixed; */
+  position: absolute;
+  right: 60px;
+  top: 120em;
+}
+h3#proj-descr4 {
+  position: absolute;
+  right: 60px;
+  top: 152em;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.picture-container img {
+  position: absolute;
+  right: 450px;
+  top: 120px;
+
+  animation: showMe 0.8s linear infinite 0s forwards;
+  animation-play-state: paused;
+}
+.picture-container:hover img {
+  animation-play-state: running;
+}
+@keyframes showMe {
+  0% {
+    visibility: visible;
+    z-index: 100;
+  }
+  12.5% {
+    visibility: visible;
+    z-index: 100;
+  }
+  25% {
+    visibility: hidden;
+    z-index: 0;
+  }
+  100% {
+    visibility: hidden;
+    z-index: 0;
+  }
+}
+.picture-container img:nth-child(1) {
+  animation-delay: 4s;
+  z-index: 5;
+}
+.picture-container img:nth-child(2) {
+  animation-delay: 5s;
+  z-index: 4;
+}
+.picture-container img:nth-child(3) {
+  animation-delay: 6.5s;
+  z-index: 3;
+}
+.picture-container img:nth-child(4) {
+  animation-delay: 6s;
+  z-index: 2;
+}
+.picture-container img:nth-child(5) {
+  animation-delay: 7s;
+  z-index: 1;
+}
+.picture-container:hover .hs-overlay {
+  opacity: 1;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3) inset;
+}
+#calc {
+  position: absolute;
+  left: 525px;
+  top: 1100px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+#calc:hover {
+  transform: scale(
+    0.9
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#footer {
+  position: absolute;
+  left: 625px;
+  top: 122em;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+#footer:hover {
+  transform: scale(
+    0.9
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
